@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
-pageEncoding ="UTF-8"%>
-    
+pageEncoding ="UTF-8"%> 
 <!doctype html PUBLIC "//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
@@ -25,10 +24,12 @@ pageEncoding ="UTF-8"%>
    
 <script src="../Jquery/jquery.validate.min.js"></script> 
 <script type="text/javascript" src="../Jquery/localization/messages_vi.js"></script>
-<script src="../Js/script.js"></script>
+<script src="../js/script.js"></script>
+
    <script>
       $("nav.navbar-fixed-top").autoHidingNavbar();
     </script>
+    
 <script>
 function validateText(id)
 {
@@ -57,18 +58,16 @@ $(document).ready(
 	$("input").click(function()
 			{
 				validateText("name");
-				validateText("email");
 				validateText("maso");
+				validateText("email");
 				validateText("sdt");
-				validateText("lop");
 				validateText("khoa");
+				validateText("lop");
 				validateText("nganh");
 				validateText("nienkhoa");
 				validateText("ngaysinh");
 				validateText("cmnd");
-				validateText("diachi");
-				validateText("tk");
-				validateText("chinhanh");
+				validateText("diachi");				
 			});
 	}
 );
@@ -85,15 +84,7 @@ $(document).ready(
 
 <body>
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-   
-
-
-    
-    
-    <!--******************************************************************************************************************************************
-    ****************************************************************** HEADER ********************************************************************
-    *******************************************************************************************************************************************-->
-    
+ 
     <header class="tada-container no-slider">
     
         <!-- LOGO -->
@@ -113,7 +104,6 @@ $(document).ready(
         <!-- MENU DESKTOP -->
     
         <nav class="menu-desktop menu-sticky">
-    
             <ul class="tada-menu">
                      <li><a href="#">HOME </a>
                         
@@ -141,10 +131,7 @@ $(document).ready(
             </ul>
         
         </nav>
-        
       
-        
-        
         <!-- SEARCH -->
         
         <div class="tada-search">
@@ -158,10 +145,7 @@ $(document).ready(
         
     </header><!--END HEADER-->
 
-    <!--******************************************************************************************************************************************
-    ****************************************************************** SECTION *******************************************************************
-    *******************************************************************************************************************************************-->
-
+    
     <section class="tada-container content-posts page post-full-width">
 
          <!-- *** CONTENT *** -->
@@ -355,20 +339,10 @@ $(document).ready(
     </div>
 </br></br>
   </div>
-
-<div class="form-group" style="margin-left:10px;margin-right:10px">
-    <label for="inputText" class="col-sm-2 control-label">TK Ngân hàng<span class="rq"> * </span></label>
-    <div class="col-sm-4">
-      <input type="number" class="form-control" name="number " id="tk" placeholder="Nhập TK ngân hàng.."  minlength="9">
-    </div>
-<label for="inputText" class="col-sm-2 control-label">Chi Nhánh<span class="rq"> * </span></label>
-    <div class="col-sm-4">
-      <input type="text" class="form-control" name="name" id="chinhanh" placeholder="Nhập chi nhánh ngân hàng.." >
-    </div>
 </br></br>
   </div>
   <label class="checkbox-inline" style="margin-left:10px;margin-right:10px">
-  <input type="checkbox" name="checkbox " id="dongy" value="option1">Tôi đồng ý  cập nhật lại thông tin cá nhân
+  <input type="checkbox" name="checkbox " id="dongy" value="option1">Tôi đồng ý cập nhật lại thông tin cá nhân
 </label>
 </br></br>
 </form>

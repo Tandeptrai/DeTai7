@@ -1,27 +1,27 @@
-<%@ page language="java" contentType="text/html; charset=utf-8"
-pageEncoding ="UTF-8"%>
-    
-<!doctype html PUBLIC "//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-<head>
-    <meta charset="utf-8">
-    <title>Trang hỗ trợ học trực tuyến</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
-    <!-- STYLES -->
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../css/slippry.css">
-    <link rel="stylesheet" type="text/css" href="../css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <!-- GOOGLE FONTS -->
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Sarina' rel='stylesheet' type='text/css'>
-     <link rel="stylesheet" media="screen" href="../css/screen.css">
-  <script src="../jquery-validation-1.15.0/lib/jquery.js"></script>
-  <script src="../jquery-validation-1.15.0/dist/jquery.validate.js"></script>
-    
+	<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding ="UTF-8"%>
+	    
+	<!doctype html PUBLIC "//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	<html>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<head>
+	    <meta charset="utf-8">
+	    <title>Trang hỗ trợ học trực tuyến</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	    <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
+	    <!-- STYLES -->
+	    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	    <link rel="stylesheet" type="text/css" href="../css/slippry.css">
+	    <link rel="stylesheet" type="text/css" href="../css/fonts.css">
+	    <link rel="stylesheet" type="text/css" href="../css/style.css">
+	    <!-- GOOGLE FONTS -->
+	    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic' rel='stylesheet' type='text/css'>
+	    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Sarina' rel='stylesheet' type='text/css'>
+	     <link rel="stylesheet" media="screen" href="../css/screen.css">
+	  <script src="../jquery-validation-1.15.0/lib/jquery.js"></script>
+	  <script src="../jquery-validation-1.15.0/dist/jquery.validate.js"></script>
+	    
 </head>
 
 <body>

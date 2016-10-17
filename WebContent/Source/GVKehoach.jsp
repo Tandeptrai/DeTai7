@@ -21,6 +21,14 @@ pageEncoding ="UTF-8"%>
      <link rel="stylesheet" media="screen" href="../css/screen.css">
   <script src="../jquery-validation-1.15.0/lib/jquery.js"></script>
   <script src="../jquery-validation-1.15.0/dist/jquery.validate.js"></script>
+  <script>
+    
+    function Save()
+        {
+          alert("Tải Bài Tập Thành Công");
+          location = "GV.TrangHocTap.html"
+        }
+    </script>
     
 </head>
 
@@ -30,7 +38,7 @@ pageEncoding ="UTF-8"%>
    
 
 
-    
+  
     
     <!--******************************************************************************************************************************************
     ****************************************************************** HEADER ********************************************************************
@@ -38,13 +46,13 @@ pageEncoding ="UTF-8"%>
     
     <header class="tada-container no-slider">
     
-        <!-- LOGO -->
+      <!-- LOGO -->
     
-<div class="logo-container">
-           <a href="index-2.html"><img src="../img/hcmute1.png" alt="logo" ></a>
+      <div class="logo-container">
+      <a href="index-2.html"><img src="../img/hcmute1.png" alt="logo" ></a>
+          <h1><strong>TRANG HỖ TRỢ HỌC TRỰC TUYẾN</strong></h1>
             <div class="tada-social">
-
-                <a href="#"><i class="icon-facebook5"></i></a>
+              <a href="http://www.facebook.com"><i class="icon-facebook5"></i></a>
                 <a href="#"><i class="icon-twitter4"></i></a>
                 <a href="#"><i class="icon-google-plus"></i></a>
                 <a href="#"><i class="icon-vimeo4"></i></a>
@@ -52,49 +60,48 @@ pageEncoding ="UTF-8"%>
             </div>
         </div>
     
-        <!-- MENU DESKTOP -->
+      <!-- MENU DESKTOP -->
     
-        <nav class="menu-desktop menu-sticky">
+     <nav class="menu-desktop menu-sticky">
     
-            <ul class="tada-menu">
-                     <li><a href="#">HOME </a>
-                        
-                    </li>
-                    <li><a href="#" class="active">KHÓA HỌC<i class="icon-arrow-down8"></i></a>
+        <ul class="tada-menu">
+          <li><a href="TrangChu.html">HOME </a></li>
+          <li><a href="GV.TrangKhoahoc.html">KHOÁ HỌC </a></li>
+          <li><a href="GV.TrangXem.html">Xem <i class="icon-arrow-down8"></i></a>
+              <ul class="submenu">
+          <li><a href="GV.TrangXem.html">Danh Sách Các Bài Nộp</a></li>
+          <li><a href="GV.XemCTBN.html">Chi Tiết Bài Nộp</a></li>
+          <li><a href="GV.XemDSHV.html">Danh sách Học Viên</a></li>
+          <li><a href="GV.XemCTHV.html">Chi Tiết Học Viên</a></li>
+          <li><a href="GV.XemDSBTRa.html">Danh Sách Bài Tập Ra</a></li>
+          <li><a href="GV.XemCTBTRa.html">Chi Tiết Bài Tập Ra</a></li>        
+               </ul>                
+                    </li>     
+                    <li><a href="GV.TrangHocTap.html">BÀI TẬP </a></li> 
+                    <li><a href="GV.TrangTracNghiem.html">TRẮC NGIỆM </a></li> 
+                    <li><a href="GV.TrangTimKiem.html">TÌM KIẾM </a></li>
+                    <li><a href="GV.TaiKhoan.html">TÀI KHOẢN <i class="icon-arrow-down8"></i></a>
                         <ul class="submenu">
-                            <li><a href="#" class="active">DANH SÁCH KHÓA HỌC</a></li>                                                
-                            <li><a href="#">kHÓA HỌC CỦA BẠN</a></li>                      
-                                                                                                          
-                        </ul>                
-                    </li>                                     
-                    <li><a href="#">TÀI KHOẢN <i class="icon-arrow-down8"></i></a>
-                        <ul class="submenu">
-                            <li><a href="#">THÔNG TIN TÀI KHOẢN</a></li>
-                            <li><a href="#">ĐỔI MẬT KHẨU</a></li>                            
-                            <li><a href="#">ĐỔI E-MAIL</a></li>
-                                                                                                  
+                          <li><a href="GV.TaiKhoan.html">THÔNG TIN TÀI KHOẢN</a></li>
+                          <li><a href="GV.TinNhan.html">TIN NHẮN</a></li>
+                          <li><a href="TrangChu.html">ĐĂNG XUẤT </a></li>         
                         </ul>                
                     </li> 
-                    <li><a href="#">THÔNG TIN SINH VIÊN</a></li>
-                     <li><a href="#">LIÊN HỆ - PHẢN HỒI<i class="icon-arrow-down8"></i></a>
-                        <ul class="submenu">
-                            <li><a href="#">LIÊN HỆ GIẢNG VIÊN</a></li>
-                            <li><a href="#">PHẢN HÒI VỚI QUẢN TRỊ VIÊN</a></li>  
-            </ul>
+                
         
         </nav>
         
-       
+        
         
         
         <!-- SEARCH -->
         
         <div class="tada-search">
-            <form>
-                <div class="form-group-search">
-                    <input type="search" class="search-field" placeholder="Search and hit enter...">
-                    <button type="submit" class="search-btn"><i class="icon-search4"></i></button>
-                </div>
+      <form>
+              <div class="form-group-search">
+                  <input type="search" class="search-field" placeholder="Search and hit enter...">
+                  <button type="submit" class="search-btn"><i class="icon-search4"></i></button>
+              </div>
             </form>
         </div>        
         
@@ -104,69 +111,60 @@ pageEncoding ="UTF-8"%>
     ****************************************************************** SECTION *******************************************************************
     *******************************************************************************************************************************************-->
 
-    <section class="tada-container content-posts page post-full-width">
+  <section class="tada-container content-posts page post-full-width">
 
-         <!-- *** CONTENT *** -->
-         <div class="jumbotron">
-     <div class="container">
-    <div > <h2><span class="glyphicon glyphicon-list-alt "> </span>  <strong>DANH SÁCH KHÓA HỌC</strong></h2></div> 
-    <br>
-  
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>Khóa học</th>
-        <th>Giảng viên</th>
-        <th>Ngày bắt đầu</th>
-        <th>Ngày kết thúc</th>
-        <th>Thời gian học</th>
-        <th>Chi tiết môn</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Lập trình web</td>
-        <td>Mark Zuckerberg</td>
-        <td>1/9/2016</td>
-        <td>1/12/2016</td>
-        <td>Thứ 6 Tiết 1 - 5</td>
-        <td><button " type="submit"><a href="HVChitietmonhoc.jsp" ><span>Xem thêm</span></a></button></td>
-      </tr>
-      <tr>
-        <td>Mạng máy tính căn bản</td>
-        <td>Anonymous</td>
-        <td>2/9/2016</td>
-        <td>2/12/2016</td>
-        <td>Thứ 7 Tiết 7 - 12</td>
-        <td><button " type="submit"><a href="#" ><span>Xem thêm</span></a></button></td>
-      </tr>
-      <tr>
-        <td>Công nghệ phần mềm</td>
-        <td>Bill Gates</td>
-        <td>3/9/2016</td>
-        <td>3/12/2016</td>
-        <td>Thứ 2 Tiết 7 - 11</td>
-        <td><button " type="submit"><a href="#" ><span>Xem thêm</span></a></button></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+       <!-- *** CONTENT *** -->
+        <div class="col-md-6 col-md-offset-2"> 
+           
+           <h1 id="ThongTinCaNhan" style="clear:right; margin-left:20px;color:#009;">Nhập Kế Hoạch Học Tập </h1>
+    
+ <form style=" border: groove;width:800px; margin-left:15px; margin-right:15px;"> 
+<form class="form-inline" role="form">
+</br></br>
+<div class="form-group">
+    <label for="inputText" class="col-sm-4 control-label">Thời Gian Làm Bài Tập</label>
+    <div class="col-sm-4">
+      <input type="date" class="form-control" id="inputText">
+    </div>
 
+</br></br>
 
+  </div>
+<div class="form-group">
+    <label for="inputText" class="col-sm-4 control-label">Nộp Dung Bài Tập</label> 
+    <div class="col-sm-4">
+      <input type="Text" class="form-control" id="inputText" placeholder="Nộp Dung Bài Tập..">
+    </div>
+   
 
-
-            <!-- ARTICLE 1 -->
+<div
+      action="" method="post"
+      enctype="multipart/form-data" class="col-sm-4">
+      <input type="file" name="file" size="50" />
+      <br />
+      <input type="submit" value="Upload File" />
       
-        <hr>
-            <article>
-               
-            </article>
-        
-        </div>
-        
-        <div class="clearfix"></div>
-        
-    </section>
+      </div>   
+</br></br>
+  </div>
+<div class="form-group">
+    <label for="inputText" class="col-sm-4 control-label">Mô Tả Nội Dung Học  </label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" id="inputText" placeholder="Nhập MSHV..">
+     </div>
+</form>
+</br>
+</br>    
+   </form>   
+    </div>
+    <br>
+    <br>
+    <button type="button" onclick= "Save(); return false;"  class="col-sm-3 col-md-offset-4 btn btn-info">Tải lên</button>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    </div>
 
     <!--******************************************************************************************************************************************
     ****************************************************************** FOOTER ********************************************************************
@@ -174,15 +172,11 @@ pageEncoding ="UTF-8"%>
     
     <footer class="tada-container">
     
-        <!-- INSTAGRAM -->
-    
-        
-        
         <!-- FOOTER BOTTOM -->
         
         <div class="footer-bottom">
-            <span class="copyright">Theme Created by <a href="#">GROUP 4</a> Copyright © 2016. All Rights Reserved</span>
-            <span class="backtotop">TOP <i class="icon-arrow-up7"></i></span>
+          <span class="copyright">Theme Created by <a href="#">GROUP 4</a> Copyright © 2016. All Rights Reserved</span>
+          <span class="backtotop">TOP <i class="icon-arrow-up7"></i></span>
             <div class="clearfix"></div>
         </div>
         
@@ -191,9 +185,9 @@ pageEncoding ="UTF-8"%>
     <!--******************************************************************************************************************************************
     ****************************************************************** SCRIPT ********************************************************************
     *******************************************************************************************************************************************-->
-    
-    <script src="../js/jquery-1.12.4.min.js"></script>
-	<script src="../js/slippry.js"></script>
+  
+  <script src="../js/jquery-1.12.4.min.js"></script>
+  <script src="../js/slippry.js"></script>
     <script src="../js/main.js"></script>
 
 </body>
