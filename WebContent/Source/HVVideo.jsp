@@ -5,23 +5,92 @@
 	<html>
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 	<head>
-	    <meta charset="utf-8">
-	    <title>Trang hỗ trợ học trực tuyến</title>
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	    <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
-	    <!-- STYLES -->
-	    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-	    <link rel="stylesheet" type="text/css" href="../css/slippry.css">
-	    <link rel="stylesheet" type="text/css" href="../css/fonts.css">
-	    <link rel="stylesheet" type="text/css" href="../css/style.css">
-	    <!-- GOOGLE FONTS -->
-	    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic' rel='stylesheet' type='text/css'>
-	    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Sarina' rel='stylesheet' type='text/css'>
-	     <link rel="stylesheet" media="screen" href="../css/screen.css">
+    <meta charset="utf-8">
+    <title>Trang Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
+    <!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/slippry.css">
+    <link rel="stylesheet" type="text/css" href="../css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- GOOGLE FONTS -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Sarina' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+	<link rel="stylesheet" media="screen" href="../css/screen.css">
 	  <script src="../jquery-validation-1.15.0/lib/jquery.js"></script>
 	  <script src="../jquery-validation-1.15.0/dist/jquery.validate.js"></script>
-
+.video-list-thumbs {
+}
+.video-list-thumbs > li {
+	margin-bottom:12px;
+}
+.video-list-thumbs > li:last-child {
+}
+.video-list-thumbs > li > a {
+	display:block;
+	position:relative;
+	background-color: #111;
+	color: #fff;
+	padding: 8px;
+ border-radius:3px transition:all 500ms ease-in-out;
+	border-radius:4px
+}
+.video-list-thumbs > li > a:hover {
+	box-shadow:0 2px 5px rgba(0, 0, 0, .3);
+	text-decoration:none
+}
+.video-list-thumbs h2 {
+	bottom: 0;
+	font-size: 14px;
+	height: 33px;
+	margin: 8px 0 0;
+}
+.video-list-thumbs .glyphicon-play-circle {
+	font-size: 60px;
+	opacity: 0.6;
+	position: absolute;
+	right: 39%;
+	top: 31%;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
+	transition:all 500ms ease-in-out;
+}
+.video-list-thumbs > li > a:hover .glyphicon-play-circle {
+	color:#fff;
+	opacity:1;
+	text-shadow:0 1px 3px rgba(0, 0, 0, .8);
+}
+.video-list-thumbs .duration {
+	background-color: rgba(0, 0, 0, 0.4);
+	border-radius: 2px;
+	color: #fff;
+	font-size: 11px;
+	font-weight: bold;
+	left: 12px;
+	line-height: 13px;
+	padding: 2px 3px 1px;
+	position: absolute;
+	top: 12px;
+	transition:all 500ms ease;
+}
+.video-list-thumbs > li > a:hover .duration {
+	background-color:#000;
+}
+@media (min-width:320px) and (max-width: 480px) {
+ .video-list-thumbs .glyphicon-play-circle {
+ font-size: 35px;
+ right: 36%;
+ top: 27%;
+}
+ .video-list-thumbs h2 {
+ bottom: 0;
+ font-size: 12px;
+ height: 22px;
+ margin: 8px 0 0;
+}
+}
 </style>
 </head>
 
@@ -29,7 +98,7 @@
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
    
-
+  
 
 	
     
@@ -57,36 +126,27 @@
     	<nav class="menu-desktop menu-sticky">
     
             <ul class="tada-menu">
-                     <li><a href="#">HOME </a>
+                     <li><a href="#">TRANG CHỦ </a>
                         
                     </li>
-                    <li><a href="#" class="active">KHÓA HỌC<i class="icon-arrow-down8"></i></a>
-                        <ul class="submenu">
-                            <li><a href="#" class="active">DANH SÁCH KHÓA HỌC</a></li>                                                
-                            <li><a href="#">kHÓA HỌC CỦA BẠN</a></li>                      
-                                                                                                          
-                        </ul>                
+                    <li><a href="#" class="active">QUẢN LÝ TÀI KHOẢN<i class="icon-arrow-down8"></i></a>
+                           <ul class="submenu">
+                        	<li><a href="Danhsachtaikhoanhv.html">DANH SÁCH TÀI KHOẢN HV</a></li>
+                            <li><a href="DanhsachtaikhoanGV.html">DANH SÁCH TÀI KHOẢN GV</a></li> 	                                                                                                 
+                        </ul>        
                     </li>                                     
-                    <li><a href="#">TÀI KHOẢN <i class="icon-arrow-down8"></i></a>
+                    <li><a href="#">DANH MỤC PHẢN HỒI <i class="icon-arrow-down8"></i></a>
                         <ul class="submenu">
-                        	<li><a href="TrangThongTinTaiKhoan.html">THÔNG TIN TÀI KHOẢN</a></li>
-                            <li><a href="TrangDoiMatKhau.html">ĐỔI MẬT KHẨU</a></li>                            
-                            <li><a href="#">ĐỔI E-MAIL</a></li>
-                                                                                                  
+                        	<li><a href="TinnhanphanhoicuaHV.html">TIN NHẮN PHẢN HỒI CỦA HV</a></li>
+                            <li><a href="TinnhanphanhoicuaGV.html">TIN NHẮN PHẢN HỒI CỦA GV</a></li>                                                                                                                
                         </ul>                
                     </li> 
-                    <li><a href="#">THÔNG TIN SINH VIÊN</a></li>
-                   <li><a href="#">LIÊN HỆ - PHẢN HỒI<i class="icon-arrow-down8"></i></a>
-                        <ul class="submenu">
-                            <li><a href="#">LIÊN HỆ GIẢNG VIÊN</a></li>
-                            <li><a href="#">PHẢN HÒI VỚI QUẢN TRỊ VIÊN</a></li>                            
+                    <li><a href="#">ĐĂNG XUẤT</a></li>
+                          
             </ul>
         
         </nav>
-        
        
-        
-        
         <!-- SEARCH -->
         
         <div class="tada-search">
@@ -112,51 +172,36 @@
         <div class="row">
         <div class="col-md-12">
             <div class="post-text">
-           <h2 class="text-center">KHÓA HỌC LẬP TRÌNH WEB</h2>
-<div class="container">
-  <div class="row">
-    <div class="col-md-10">
-      <div class="panel-group">
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h4 class="panel-title">Chương 1: Hướng dẫn làm bootstrap <i class="glyphicon glyphicon-minus pull-right"></i></h4>
-          </div>
-          <div class="panel-body">
-              <p><a href="#"><span class="glyphicon glyphicon-file" aria-hidden="true">	Tài liệu bài giảng</span></a></p>
-              <p><a href ="#"><span class="glyphicon glyphicon-book" aria-hidden="true"> Bài tập chương 1</span></a></p>            
-             <p><a href ="HVVideo.jsp"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"> Các video bài giảng</span></a></p>	
-          </div>
-        </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h4 class="panel-title">Chuong 2: Khai báo dữ liệu vào demo<i class="glyphicon glyphicon-plus pull-right"></i></h4>
-          </div>
-          <div class="panel-body">
-              <p><a href="#"><span class="glyphicon glyphicon-file" aria-hidden="true">	Tài liệu bài giảng</span></a></p>
-              <p><a href ="#"><span class="glyphicon glyphicon-book" aria-hidden="true"> Bài tập chương 1</span></a></p>            
-             <p><a href ="#"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"> Các video bài giảng</span></a></p>
-          </div>
-        </div>
-        
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h4 class="panel-title">Chương 3: Nộp đồ án  <i class="glyphicon glyphicon-plus pull-right"></i></h4>
-          </div>
-          <div class="panel-body">
-            <p><a href="#"><span class="glyphicon glyphicon-file" aria-hidden="true">	Tài liệu bài giảng</span></a></p>
-              <p><a href ="#"><span class="glyphicon glyphicon-book" aria-hidden="true"> Bài tập chương 1</span></a></p>            
-             <p><a href ="#"><span class="glyphicon glyphicon-facetime-video" aria-hidden="true"> Các video bài giảng</span></a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+                    <div class="container">
+  <h2 class="text-center">Tạo trang trình bày Video bằng Bootstrap</h2>
+  <p></p>
+  <ul class="list-unstyled video-list-thumbs row">      
+   
+  
+    <li class="col-md-3"> 
+        <a href="https://youtu.be/NIKhV0kLpfE" title="Cách sử dụng Bootstrap Grid System (phần 3)" target="_blank"> 
+        <img src="#" alt="Barca" class="img-responsive" height="130px" />
+        <h2>Cách sử dụng Bootstrap Grid System (phần 3)</h2>
+        <span class="glyphicon glyphicon-play-circle"></span> <span class="duration">18:01</span> </a> 
+    </li> 
+     <li class="col-md-3"> 
+        <a href="https://youtu.be/rNVxDithhlE" title="Cách sử dụng Bootstrap Grid System (phần 2)" target="_blank"> 
+        <img src="#" alt="Barca" class="img-responsive" height="130px" />
+        <h2>Cách sử dụng Bootstrap Grid System (phần 2)</h2>
+        <span class="glyphicon glyphicon-play-circle"></span> <span class="duration">17:45</span> </a> 
+    </li>
+    <li class="col-md-3"> 
+        <a href="https://youtu.be/2AggnP9GS0w" title="Cách sử dụng Bootstrap Grid System (phần 1)" target="_blank"> 
+        <img src="#" alt="Barca" class="img-responsive" height="130px" />
+        <h2>Cách sử dụng Bootstrap Grid System (phần 1)</h2>
+        <span class="glyphicon glyphicon-play-circle"></span> <span class="duration">15:52</span> </a> 
+    </li>          
+  </ul>
 </div>
-    
                 </div>  
         </div>
         </div>
-
+	
         	<!-- ARTICLE 1 -->
         
         	<article>
@@ -203,7 +248,7 @@
         </div>
         
                            
-              
+               
             
        	 	</article>
         
@@ -213,10 +258,7 @@
         
     </section>
 
-    <!--******************************************************************************************************************************************
-    ****************************************************************** FOOTER ********************************************************************
-    *******************************************************************************************************************************************-->
-    
+   
     <footer class="tada-container">
     
     	<!-- INSTAGRAM -->
@@ -240,26 +282,6 @@
 	<script src="../js/jquery-1.12.4.min.js"></script>
 	<script src="../js/slippry.js"></script>
     <script src="../js/main.js"></script>
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script type="text/javascript">
-		$(function() {
 
-  $('.panel-body').not(":first").toggle();
-
-  $('.panel').on('click', '.panel-heading', function() {
-    var panelBody = $(this).parent().find('.panel-body')
-
-    if ($(panelBody).is(":visible")) {
-      $(this).find('.glyphicon').removeClass('glyphicon-minus').addClass('glyphicon-plus');
-      $(panelBody).slideUp(300);
-    } else {
-      $(this).find('.glyphicon').removeClass('glyphicon-plus').addClass('glyphicon-minus');
-      $(panelBody).slideDown(300);
-    }
-
-  });
-});
-</script> 
 </body>
 </html>
